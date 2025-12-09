@@ -1,0 +1,191 @@
+.signupContainer {
+  height: 100vh;
+  width: 100%;
+  background: #f5f0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  
+  overflow: hidden;
+}
+
+/* Card */
+.signupWrapper {
+  width: 700px;
+  max-width: 100%;
+  background: #d9b8b3;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.signupHeader {
+  font-weight: 700;   /* makes it bold */
+  font-style: italic; /* makes it italic */
+  background: linear-gradient(135deg, #ad807a, #bc968d);
+  padding: 20px 30px;
+  text-align: center;
+  color: #3e2c20;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.signupHeader h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Body */
+.signupBody {
+  padding: 30px 34px 40px 34px;
+}
+
+/* Grid */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+/* Inputs */
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e2c20;
+  margin-bottom: 6px;
+}
+
+.inputBox input {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f7f4f3;
+  border: 1px solid #d8c2be;
+  transition: 0.2s;
+}
+
+.inputBox input:focus {
+  outline: none;
+  border-color: #bc968d;
+  box-shadow: 0 0 4px rgba(188, 150, 141, 0.5);
+}
+
+.error {
+  color: #7a1f17;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  background: #ad807a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background: #9b6e69;
+}
+
+/* Footer link */
+.bottomText {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bottomText a {
+  color: #3e2c20;
+  text-decoration: underline;
+}
+
+/* ---- RESPONSIVENESS ---- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .signupWrapper {
+    width: 90%;
+  }
+
+  .signupHeader h2 {
+    font-size: 24px;
+  }
+
+  .signupBody {
+    padding: 25px 26px 35px 26px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 580px) {
+  .formGrid {
+    grid-template-columns: 1fr; /* collapse to single column */
+  }
+
+  .fullWidth {
+    grid-column: span 1;
+  }
+
+  .signupWrapper {
+    width: 100%;
+  }
+
+  .signupHeader {
+    padding: 30px 20px;
+  }
+
+  .signupHeader h2 {
+    font-size: 22px;
+  }
+
+  .signupBody {
+    padding: 24px 22px;
+  }
+
+  .inputBox label {
+    font-size: 13px;
+  }
+
+  .inputBox input {
+    padding: 11px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .signupHeader h2 {
+    font-size: 20px;
+  }
+
+  .signupBody {
+    padding: 20px 18px;
+  }
+
+  .btn {
+    padding: 11px;
+    font-size: 14px;
+  }
+}

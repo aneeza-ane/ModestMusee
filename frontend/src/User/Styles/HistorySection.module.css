@@ -1,0 +1,49 @@
+.historySection {
+  background: url("./history.jpg") center/cover no-repeat;
+  color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.historyOverlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.historyContent {
+  max-width: 600px;
+  padding-left: 8%;
+}
+
+.historyContent h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.historyContent h2 span {
+  font-weight: 400;
+  color: #d9b8b3;
+}
+
+.historyContent p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.shopOutline {
+  border: 1px solid #3e2c20;
+  background: transparent;
+  color: #3e2c20;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shopOutline:hover {
+  background-color: #bc968d;
+  color: #3e2c20;
+}

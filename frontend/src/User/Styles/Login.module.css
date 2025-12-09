@@ -1,0 +1,166 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.leftHalf {
+  flex: 1;
+  min-width: 300px; /* ensures it doesn’t shrink too small */
+  background-image: url('./login.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlayText {
+  color: #3e2c20;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute; 
+  left: 50%;
+  top: 50%;  
+  transform: translate(-30%, -50%); /* center properly both X & Y */
+}
+
+.modest, .muse {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.rightHalf {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Login card */
+.loginCard {
+  background-color: #d9b8b3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px; /* allows it to shrink on mobile */
+  box-sizing: border-box;
+}
+
+.loginCard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3e2c20;
+}
+
+.inputBox {
+  margin-bottom: 15px;
+}
+
+.inputBox label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #bc968d;
+  color: #3e2c20;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #ad807a;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3e2c20;
+}
+
+.registerLink {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.registerLink a {
+  color: #3e2c20;
+  text-decoration: none;
+}
+
+/* ---------------------- */
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  .loginContainer {
+    flex-direction: column; /* stack halves vertically */
+    height: auto; /* allow scrolling if needed */
+  }
+
+  .leftHalf, .rightHalf {
+    flex: none;
+    width: 100%;
+    min-height: 250px; /* adjust as needed */
+  }
+
+  .overlayText {
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%); /* center X only */
+    align-items: center; /* center text */
+  }
+
+  .modest, .muse {
+    font-size: 28px;
+  }
+
+  .loginCard {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .overlayText {
+    font-size: 22px;
+  }
+
+  .modest, .muse {
+    font-size: 22px;
+  }
+
+  .loginCard {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 8px;
+  }
+
+  .inputBox input {
+    padding: 8px;
+  }
+}

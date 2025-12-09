@@ -1,0 +1,47 @@
+.sustainabilitySection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 8%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.textContainer h2 span {
+  font-weight: 400;
+  color: #bc968d;
+}
+
+.textContainer p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.shopOutline {
+  border: 1px solid #3e2c20;
+  background: transparent;
+  color: #3e2c20;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shopOutline:hover {
+  background-color: #d9b8b3;
+  color: #3e2c20;
+
+}

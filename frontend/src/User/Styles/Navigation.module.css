@@ -1,0 +1,81 @@
+.topBanner {
+  text-align: center;
+  padding: 8px 0;
+  background-color: #b38b83;
+  color: #4a3529;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbarCustom {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d5c1b0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburgerBtn {
+  font-size: 1.8rem;
+  color: #3e2c20;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.logoContainer {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  object-fit: contain;
+  max-width: 400px;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  color: #3e2c20;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #a57b62;
+}
+
+.menuLink {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  color: #3e2c20;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s ease;
+}
+
+.menuLink:hover {
+  color: #a57b62;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 65px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 55px;
+    max-width: 130px;
+  }
+}

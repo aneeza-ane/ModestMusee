@@ -1,0 +1,77 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-35%, -50%);
+  color: #4a3f35;
+}
+
+.textBox {
+  max-width: 600px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #3e2c20;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #5c4a3a;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+.shopBtn {
+  border-radius: 50px;
+  padding: 10px 25px;
+  background-color: #3a2e25;
+  color: #fffaf7;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.shopBtn:hover {
+  background-color: #5b4637;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .shopBtn {
+    width: 200px;
+  }
+}

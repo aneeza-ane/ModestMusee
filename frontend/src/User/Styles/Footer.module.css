@@ -1,0 +1,38 @@
+.footer {
+  background-color: #b38b83;
+  color: #4a3529;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer h5 {
+  color: #3e2c20;
+  font-size: 35px;
+}
+
+.footer p, 
+.footer li {
+  color: #3e2c20;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #3e2c20;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: bisque; 
+}
+
+.social {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}

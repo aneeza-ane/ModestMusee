@@ -1,0 +1,148 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d9cbbf;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 850px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.left {
+  flex: 1;
+  background: #f1ebe6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.brand {
+  font-size: 2.5rem;
+  color: #4a3f35;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #7a6f66;
+  letter-spacing: 0.5px;
+}
+
+.right {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #3a312b;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #8b837d;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 500;
+  color: #4a3f35;
+  margin-bottom: 5px;
+}
+
+.inputGroup input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d8cfc7;
+  background: #faf8f6;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #b49a85;
+  outline: none;
+  background: #fff;
+}
+
+.loginBtn {
+  margin-top: 10px;
+  background: #b49a85;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loginBtn:hover {
+  background: #a1826a;
+}
+
+.forgot {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a6f66;
+}
+
+.forgot a {
+  color: #a1826a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left {
+    padding: 40px 20px;
+  }
+
+  .right {
+    padding: 40px 20px;
+  }
+}

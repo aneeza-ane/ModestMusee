@@ -1,0 +1,179 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f5f2;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    color: #3b2a24;
+}
+
+.pageTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #3b2a24;
+}
+
+.form {
+    background: #fffdfb;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.imageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.placeholder {
+    width: 150px;
+    height: 200px;
+    background-color: #f1eae4;
+    border: 1px dashed #c8b7a6;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.uploadBtn {
+    background-color: #e7d8c8;
+    border: none;
+    color: #3b2a24;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.uploadBtn:hover {
+    background-color: #d9c4b5;
+}
+
+.inputGroup {
+    margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #c8b7a6;
+    background-color: #fffaf7;
+    font-size: 0.95rem;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.saveBtn {
+    background-color: #3b2a24;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s ease;
+}
+
+.saveBtn:hover {
+    background-color: #5a4033;
+}
+
+.error {
+    color: #b33a3a;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        padding: 2rem 2rem;
+    }
+    .pageTitle {
+        font-size: 1.6rem;
+    }
+    .placeholder {
+        width: 130px;
+        height: 180px;
+    }
+    .uploadBtn {
+        padding: 0.45rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .main {
+        padding: 1rem 1.5rem;
+    }
+    .form {
+        width: 100%;
+        padding: 1.5rem 1.8rem;
+    }
+    .pageTitle {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .placeholder {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 0.8rem 1rem;
+    }
+    .pageTitle {
+        font-size: 1.2rem;
+    }
+    .form {
+        padding: 1rem 1rem;
+        border-radius: 12px;
+    }
+    .inputGroup input,
+    .inputGroup select,
+    .inputGroup textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .placeholder {
+        width: 100px;
+        height: 140px;
+    }
+    .uploadBtn {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.85rem;
+    }
+    .saveBtn {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+}
