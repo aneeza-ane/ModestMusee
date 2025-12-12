@@ -8,7 +8,7 @@ function Categories() {
     { name: "Hijabs", image: "./cat.hijabs.jpg" },
     { name: "Niqabs", image: "./cat.niqabs.jpg" },
     { name: "Scrunchies", image: "./cat.scrunchies.jpg" },
-    { name: "UnderCaps", image: "./cat.undercaps.jpg" },
+    { name: "Undercaps", image: "./cat.undercaps.jpg" },
     { name: "Hand Gloves", image: "./cat.gloves.jpg" }
   ];
 

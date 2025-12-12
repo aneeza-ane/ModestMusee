@@ -30,7 +30,7 @@ const ProfilePage = () => {
     const fetchProfile = async () => {
       try {
         const token = getToken();
-        const res = await axios.get("http://localhost:5000/user/profile", {
+        const res = await axios.get("https://modest-muse-backend.vercel.app/user/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUserData(res.data);
@@ -49,7 +49,7 @@ const ProfilePage = () => {
   const onSubmit = async (data) => {
     try {
       const token = getToken();
-      const res = await axios.put("http://localhost:5000/user/profile", data, {
+      const res = await axios.put("https://modest-muse-backend.vercel.app/user/profile", data, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUserData(res.data);

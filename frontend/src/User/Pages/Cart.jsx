@@ -14,7 +14,7 @@ const CartPage = () => {
     const fetchCart = async () => {
       try {
         const token = localStorage.getItem("token"); // JWT token
-        const res = await axios.get("http://localhost:5000/cart", {
+        const res = await axios.get("https://modest-muse-backend.vercel.app/cart", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setCart(res.data.products);
@@ -32,7 +32,7 @@ const CartPage = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.put(
-        "http://localhost:5000/cart/update",
+        "https://modest-muse-backend.vercel.app/cart/update",
         { productId, quantity },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -46,7 +46,7 @@ const CartPage = () => {
   const removeItem = async (productId) => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.delete(`http://localhost:5000/cart/remove/${productId}`, {
+      const res = await axios.delete(`https://modest-muse-backend.vercel.app/cart/remove/${productId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCart(res.data.products);

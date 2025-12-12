@@ -68,12 +68,12 @@ function Navigation() {
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div className="offcanvas-body">
-          <a href="#" className={styles.menuLink}>Hijabs</a>
-          <a href="#" className={styles.menuLink}>Abayas</a>
-          <a href="#" className={styles.menuLink}>Niqabs</a>
-          <a href="#" className={styles.menuLink}>Gloves</a>
-          <a href="#" className={styles.menuLink}>Scrunchies</a>
-          <a href="#" className={styles.menuLink}>Undercaps</a>
+          <a href="/products/Hijabs" className={styles.menuLink}>Hijabs</a>
+          <a href="/products/Abayas" className={styles.menuLink}>Abayas</a>
+          <a href="/products/Niqabs" className={styles.menuLink}>Niqabs</a>
+          <a href="/products/Gloves" className={styles.menuLink}>Gloves</a>
+          <a href="/products/Scrunchies" className={styles.menuLink}>Scrunchies</a>
+          <a href="/products/Undercaps" className={styles.menuLink}>Undercaps</a>
         </div>
       </div>
     </div>
