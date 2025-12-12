@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import styles from "../Styles/signup.module.css";
+import styles from "../Styles/Signup.module.css";
 import { userSignup } from "../../Service/api";
 
 const signupSchema = z
