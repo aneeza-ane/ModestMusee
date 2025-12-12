@@ -3,7 +3,7 @@ import Sidebar from "../Components/Sidebar";
 import styles from "../Styles/ViewItems.module.css";
 import { useNavigate } from "react-router-dom";
 import { adminDeleteItems, adminViewItems } from "../../Service/api";
-import { ProductContext } from "../Context/ProductContext.js";
+import { ProductContext } from "../Context/ProductContext.jsX";
 
 const API = "http://localhost:5000";
 

@@ -6,7 +6,7 @@ import Sidebar from "../Components/Sidebar";
 import styles from "../Styles/UpdateItem.module.css";
 import { useNavigate } from "react-router-dom";
 import { adminUpdateItem } from "../../Service/api";
-import { ProductContext } from "../Context/ProductContext.js";
+import { ProductContext } from "../Context/ProductContext.jsX";
 
 const updateItemSchema = z.object({
   title: z.string().min(2),
