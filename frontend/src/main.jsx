@@ -5,7 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import router from './router.jsx';
 
 
-import { ProductProvider } from './Admin/Context/ProductContext.jsX';
+import { ProductProvider } from './Admin/Context/ProductContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
