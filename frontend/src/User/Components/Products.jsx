@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Styles/products.module.css";
+import styles from "../Styles/Products.module.css";
 
 function Products({ title, products }) {
   return (
