@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import styles from "../Styles/checkout.module.css";
+import styles from "../Styles/Checkout.module.css";
 import {
   getCart,
   updateCart,
